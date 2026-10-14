@@ -1,0 +1,173 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#090a0d">
+<title>Viraliza AI — Ideias que viram conteúdo</title>
+<style>
+:root{--bg:#090a0d;--panel:#11141a;--panel2:#171b22;--gold:#ffd13d;--gold2:#f5b900;--text:#f6f7fb;--muted:#a7afbd;--line:#29313c;--green:#8ce0ad}
+*{box-sizing:border-box}body{margin:0;background:radial-gradient(ellipse at top,#1b1a12 0,#090a0d 48%);color:var(--text);font:16px/1.5 system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif}
+button,input,select,textarea{font:inherit}button{cursor:pointer}
+.app{max-width:1050px;margin:auto;padding:18px 15px 90px}
+header{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:12px 0 24px}
+.brand{display:flex;align-items:center;gap:10px;font-size:1.4rem;font-weight:850;letter-spacing:-.04em}.brand b{color:var(--gold)}
+.logo{width:43px;height:43px;border-radius:14px;background:linear-gradient(145deg,#ffe77b,#e8a900);display:grid;place-items:center;color:#161208;font-size:24px;box-shadow:0 5px 22px #ffd13d25}
+.pill{border:1px solid #5c4b17;border-radius:999px;color:var(--gold);padding:7px 11px;font-size:.78rem;background:#171408}
+.hero{padding:23px 0 19px}.eyebrow{color:var(--gold);font-weight:750;text-transform:uppercase;letter-spacing:.12em;font-size:.73rem}
+h1{font-size:clamp(2rem,7vw,3.7rem);line-height:1.04;letter-spacing:-.055em;margin:9px 0 13px}h1 span{color:var(--gold)}
+.hero p{max-width:620px;color:var(--muted);margin:0;font-size:1.04rem}
+.grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;margin:22px 0}
+.tool{border:1px solid var(--line);border-radius:18px;background:linear-gradient(145deg,#151920,#0e1116);padding:17px;text-align:left;color:var(--text);min-height:126px;transition:.15s}
+.tool:hover,.tool:focus-visible{border-color:#b69a37;transform:translateY(-1px);outline:none}.tool .emoji{font-size:1.6rem}.tool strong{display:block;margin:7px 0 3px}.tool small{color:var(--muted);display:block;line-height:1.4}
+.panel{border:1px solid var(--line);border-radius:20px;background:#0f1217;padding:17px;margin-top:15px}
+.panelhead{display:flex;justify-content:space-between;align-items:center;gap:10px;flex-wrap:wrap}
+h2{font-size:1.2rem;margin:0;letter-spacing:-.02em}.sub{color:var(--muted);font-size:.9rem;margin:5px 0 15px}
+label{display:block;color:#dce1e9;font-size:.88rem;margin:12px 0 6px}
+input,select,textarea{width:100%;border:1px solid var(--line);border-radius:12px;padding:12px;background:#090c10;color:var(--text);outline:none}
+input:focus,select:focus,textarea:focus{border-color:var(--gold)}textarea{min-height:80px;resize:vertical}
+.row{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.btn{border:0;border-radius:12px;background:linear-gradient(110deg,var(--gold),#f6b900);color:#171306;font-weight:800;padding:12px 16px}
+.btn.secondary{background:#1b2028;border:1px solid var(--line);color:var(--text)}
+.btn.small{padding:8px 11px;font-size:.83rem}
+.actions{display:flex;gap:8px;flex-wrap:wrap;margin-top:13px}
+.results{display:grid;gap:10px;margin-top:15px}
+.result{border:1px solid var(--line);background:#0b0e12;border-radius:14px;padding:14px}
+.result p{margin:0;white-space:pre-wrap;overflow-wrap:anywhere}
+.result .actions{margin-top:10px}
+.muted{color:var(--muted)}.empty{border:1px dashed #3a414b;border-radius:14px;padding:22px;text-align:center;color:var(--muted)}
+.chips{display:flex;gap:8px;flex-wrap:wrap}.chip{border:1px solid var(--line);border-radius:999px;padding:8px 11px;background:#0b0e12;color:#dce1e9}.chip.active{border-color:var(--gold);color:var(--gold);background:#201b09}
+nav{display:flex;gap:8px;flex-wrap:wrap;margin:22px 0 5px}nav button{background:transparent;color:var(--muted);border:1px solid var(--line);padding:9px 12px;border-radius:999px}nav button.active{color:var(--gold);border-color:#8b7426}
+.notice{font-size:.84rem;color:var(--muted);padding:14px 2px 0}
+footer{text-align:center;color:#747d8a;font-size:.78rem;padding-top:24px}
+.hidden{display:none!important}
+@media(min-width:720px){.app{padding:24px 24px 80px}.grid{grid-template-columns:repeat(3,minmax(0,1fr))}.tool{padding:20px}.panel{padding:22px}.hero{padding-top:35px}}
+@media(max-width:420px){.row{grid-template-columns:1fr}.brand{font-size:1.2rem}.pill{font-size:.7rem}.grid{gap:9px}.tool{padding:13px;min-height:125px}}
+</style>
+</head>
+<body>
+<div class="app">
+<header>
+  <div class="brand"><div class="logo">↗</div><div>Viraliza <b>AI</b></div></div>
+  <div class="pill">BETA • GRATUITO</div>
+</header>
+<section class="hero">
+  <div class="eyebrow">Seu parceiro de conteúdo</div>
+  <h1>Ideias que viram <span>conteúdo.</span></h1>
+  <p>Crie ideias para posts, frases para Reels, legendas e hashtags em poucos segundos. Escolha uma ferramenta e comece.</p>
+</section>
+<div class="grid">
+  <button class="tool" data-tool="ideas"><span class="emoji">💡</span><strong>Ideias de posts</strong><small>Encontre temas para publicar.</small></button>
+  <button class="tool" data-tool="reels"><span class="emoji">▶️</span><strong>Frases para Reels</strong><small>Frases para prender atenção.</small></button>
+  <button class="tool" data-tool="captions"><span class="emoji">✍️</span><strong>Legendas</strong><small>Textos prontos para adaptar.</small></button>
+  <button class="tool" data-tool="hashtags"><span class="emoji">#️⃣</span><strong>Hashtags</strong><small>Tags relacionadas ao tema.</small></button>
+  <button class="tool" data-tool="scripts"><span class="emoji">🎬</span><strong>Roteiros curtos</strong><small>Estruture um vídeo rápido.</small></button>
+  <button class="tool" data-tool="bio"><span class="emoji">👤</span><strong>Bio de perfil</strong><small>Apresente seu perfil com clareza.</small></button>
+</div>
+
+<section class="panel" id="generator">
+  <div class="panelhead"><h2 id="toolTitle">✨ Criador de conteúdo</h2><button class="btn secondary small" id="randomBtn">Surpreenda-me</button></div>
+  <p class="sub" id="toolDescription">Escolha uma ferramenta acima ou preencha os campos abaixo.</p>
+  <div class="row">
+    <div><label for="niche">Tema / nicho</label><input id="niche" value="marketing digital" placeholder="Ex.: culinária, estudos, negócios"></div>
+    <div><label for="tone">Estilo</label><select id="tone"><option value="direto">Direto e prático</option><option value="motivacional">Motivacional</option><option value="engracado">Leve e divertido</option><option value="educativo">Educativo</option><option value="provocativo">Provocativo, sem exageros</option></select></div>
+  </div>
+  <label for="detail">Detalhe opcional</label><input id="detail" placeholder="Ex.: para quem está começando do zero">
+  <div class="actions"><button class="btn" id="generateBtn">✦ Gerar conteúdo</button><button class="btn secondary" id="clearBtn">Limpar resultados</button></div>
+  <div id="results" class="results"><div class="empty">Seu conteúdo vai aparecer aqui. Escolha uma ferramenta e toque em “Gerar conteúdo”.</div></div>
+</section>
+
+<section class="panel">
+  <div class="panelhead"><h2>⭐ Favoritos</h2><button class="btn secondary small" id="exportBtn">Exportar .txt</button></div>
+  <p class="sub">Salve os conteúdos que você quiser reutilizar. Eles ficam guardados neste navegador.</p>
+  <div id="favorites" class="results"><div class="empty">Ainda não há favoritos salvos.</div></div>
+</section>
+<p class="notice">Importante: esta primeira versão gera sugestões usando modelos locais, sem conexão com uma IA externa. Revise e adapte os textos antes de publicar. Os resultados não garantem alcance ou vendas.</p>
+<footer>Viraliza AI • Protótipo inicial • Feito para criar com responsabilidade</footer>
+</div>
+<script>
+const toolInfo={
+ ideas:["💡 Ideias de posts","Temas práticos para transformar em publicações."],
+ reels:["▶️ Frases para Reels","Frases curtas para combinar com o seu vídeo."],
+ captions:["✍️ Legendas","Legendas editáveis para acompanhar seu conteúdo."],
+ hashtags:["#️⃣ Hashtags","Sugestões relacionadas ao tema escolhido."],
+ scripts:["🎬 Roteiros curtos","Uma estrutura simples para um vídeo de 15 a 30 segundos."],
+ bio:["👤 Bio de perfil","Opções de bio claras e adequadas ao seu perfil."]
+};
+let currentTool="ideas", generated=[], favorites=[];
+try{favorites=JSON.parse(localStorage.getItem("viraliza-favs")||"[]")}catch(e){favorites=[]}
+const $=id=>document.getElementById(id);
+function chooseTool(t){currentTool=t;document.querySelectorAll(".tool").forEach(b=>b.style.borderColor=b.dataset.tool===t?"#b69a37":"");$("toolTitle").textContent=toolInfo[t][0];$("toolDescription").textContent=toolInfo[t][1];}
+document.querySelectorAll(".tool").forEach(b=>b.addEventListener("click",()=>{chooseTool(b.dataset.tool);$("generator").scrollIntoView({behavior:"smooth",block:"start"})}));
+function hashTopic(s){return s.trim().replace(/^#+/,"").replace(/\s+/g,"")}
+function buildContent(tool,niche,tone,detail){
+ const n=niche||"seu tema", d=detail?` pensando em ${detail}`:"";
+ const styles={
+ direto:["Sem complicar: comece pelo básico de "+n+".","Um erro comum em "+n+" — e como evitar.","3 passos práticos para melhorar em "+n+"."],
+ motivacional:["O progresso em "+n+" começa quando você para de esperar o momento perfeito.","Faça o básico bem feito em "+n+"; consistência vale mais que pressa.","Seu próximo passo em "+n+" não precisa ser gigante. Só precisa acontecer."],
+ engracado:["POV: você disse que ia estudar "+n+" por 10 minutos e já passou uma hora.","A expectativa em "+n+": dominar tudo hoje. A realidade: aprender uma coisa de cada vez.","Quando você finalmente entende algo de "+n+" e quer explicar pra todo mundo."],
+ educativo:["Guia para iniciantes: 3 conceitos de "+n+" que vale entender.","Mito ou verdade sobre "+n+"? Explique com um exemplo simples.","Checklist básico para quem está começando em "+n+"."],
+ provocativo:["Você não precisa fazer tudo em "+n+"; precisa saber o que realmente funciona para você.","Antes de copiar uma tendência de "+n+", faça esta pergunta.","Estar ocupado com "+n+" não é o mesmo que estar avançando."]
+ };
+ const lines=styles[tone]||styles.direto;
+ if(tool==="ideas")return [
+  "Explique "+n+" como se fosse para alguém que está começando"+d+".",
+  "5 erros de iniciantes em "+n+" e como evitá-los.",
+  "Mito ou verdade: uma ideia popular sobre "+n+".",
+  "Um passo a passo simples para dar o primeiro passo em "+n+".",
+  "O que eu gostaria de saber antes de começar em "+n+".",
+  "Responda uma dúvida frequente sobre "+n+"."
+ ];
+ if(tool==="reels")return [
+  lines[0],
+  lines[1],
+  lines[2],
+  "Ninguém começa sabendo. Aprenda, teste e melhore.",
+  "Menos promessa. Mais prática, paciência e consistência."
+ ];
+ if(tool==="captions")return [
+  `${lines[0]} Salve este post para consultar depois e conte nos comentários qual parte você quer ver explicada.`,
+  `Aprender sobre ${n} é um processo. Comece por uma coisa, pratique e ajuste no caminho. Qual é sua maior dúvida sobre esse tema?`,
+  `Uma dica simples sobre ${n}: transforme o que você aprende em uma pequena ação. Compartilhe com alguém que também está começando.`
+ ];
+ if(tool==="hashtags"){
+  const map={"marketing digital":["marketingdigital","empreendedorismodigital","criacaodeconteudo","redessociais","negociosonline","dicasdemarketing","conteudo"],"motivação":["motivacao","disciplina","foco","mentalidade","desenvolvimentopessoal","constancia"],"finanças":["educacaofinanceira","organizacaofinanceira","financas","planejamentofinanceiro","investimentos","dinheiro"],"beleza":["beleza","autocuidado","dicasdebeleza","skincare","estilo"],"culinária":["culinaria","receitas","comida","cozinhafacil","receitafacil"]};
+  let found=Object.keys(map).find(k=>n.toLowerCase().includes(k));
+  let arr=found?map[found]:["dicas", "aprendizado", "criadoresdeconteudo", "inspiracao", "passoapasso", "ideias", "comunidade"];
+  return [...new Set([n.replace(/[^a-zA-ZÀ-ÿ0-9 ]/g,"").replace(/\s+/g,"").toLowerCase(),...arr])].slice(0,10).map(x=>"#"+hashTopic(x));
+ }
+ if(tool==="scripts")return [
+  `ROTEIRO (20s) — ${n}\n0–3s: Abra com uma pergunta: “Você também tem dúvida sobre ${n}?”\n3–12s: Explique uma dica simples e dê um exemplo.\n12–18s: Mostre o próximo passo que a pessoa pode testar.\n18–20s: CTA: “Salva para consultar depois.”`,
+  `ROTEIRO (15s) — erro comum em ${n}\nGancho: “Um erro que muita gente comete em ${n}...”\nDica: explique o erro em uma frase e mostre uma alternativa.\nFinal: “Envie para alguém que precisa dessa dica.”`
+ ];
+ if(tool==="bio")return [
+  `📌 ${n} sem complicação\n💡 Dicas práticas para começar\n📚 Aprenda um passo de cada vez`,
+  `Conteúdo sobre ${n}\nIdeias, dicas e aprendizados reais\n👇 Acompanhe os próximos posts`,
+  `Seu espaço para aprender ${n}\nConteúdo simples, direto e útil\n✨ Evolua no seu ritmo`
+ ];
+ return lines;
+}
+function renderResults(items){
+ generated=items.map((text,i)=>({id:Date.now()+"-"+i,text}));
+ const root=$("results");root.innerHTML="";
+ generated.forEach((item,i)=>{
+  const card=document.createElement("div");card.className="result";
+  const p=document.createElement("p");p.textContent=item.text;card.appendChild(p);
+  const actions=document.createElement("div");actions.className="actions";
+  const copy=document.createElement("button");copy.className="btn secondary small";copy.textContent="📋 Copiar";copy.onclick=()=>copyText(item.text,copy);
+  const save=document.createElement("button");save.className="btn secondary small";save.textContent="☆ Salvar";save.onclick=()=>saveFavorite(item.text);
+  actions.append(copy,save);card.appendChild(actions);root.appendChild(card);
+ });
+}
+async function copyText(text,button){try{await navigator.clipboard.writeText(text);button.textContent="Copiado ✓"}catch(e){const ta=document.createElement("textarea");ta.value=text;document.body.appendChild(ta);ta.select();document.execCommand("copy");ta.remove();button.textContent="Copiado ✓"}setTimeout(()=>button.textContent="📋 Copiar",1400)}
+function saveFavorite(text){if(favorites.some(f=>f.text===text))return;favorites.unshift({text,created:new Date().toLocaleDateString("pt-BR")});favorites=favorites.slice(0,100);localStorage.setItem("viraliza-favs",JSON.stringify(favorites));renderFavorites()}
+function renderFavorites(){const root=$("favorites");root.innerHTML="";if(!favorites.length){root.innerHTML='<div class="empty">Ainda não há favoritos salvos.</div>';return}
+ favorites.forEach((f,i)=>{const card=document.createElement("div");card.className="result";const p=document.createElement("p");p.textContent=f.text;card.appendChild(p);const actions=document.createElement("div");actions.className="actions";const copy=document.createElement("button");copy.className="btn secondary small";copy.textContent="📋 Copiar";copy.onclick=()=>copyText(f.text,copy);const del=document.createElement("button");del.className="btn secondary small";del.textContent="Remover";del.onclick=()=>{favorites.splice(i,1);localStorage.setItem("viraliza-favs",JSON.stringify(favorites));renderFavorites()};actions.append(copy,del);card.appendChild(actions);root.appendChild(card)})}
+$("generateBtn").onclick=()=>{const niche=$("niche").value.trim(),tone=$("tone").value,detail=$("detail").value.trim();renderResults(buildContent(currentTool,niche,tone,detail))};
+$("clearBtn").onclick=()=>{$("results").innerHTML='<div class="empty">Resultados limpos. Gere novas ideias quando quiser.</div>';generated=[]};
+$("randomBtn").onclick=()=>{const keys=Object.keys(toolInfo);chooseTool(keys[Math.floor(Math.random()*keys.length)]);$("generateBtn").click()};
+$("exportBtn").onclick=()=>{if(!favorites.length){alert("Salve algum conteúdo primeiro.");return}const blob=new Blob([favorites.map((f,i)=>`${i+1}. ${f.text}`).join("\n\n")],{type:"text/plain;charset=utf-8"});const url=URL.createObjectURL(blob);const a=document.createElement("a");a.href=url;a.download="viraliza-favoritos.txt";a.click();URL.revokeObjectURL(url)};
+renderFavorites();chooseTool("ideas");
+</script>
+</body>
+</html>
